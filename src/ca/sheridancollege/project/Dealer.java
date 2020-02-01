@@ -15,7 +15,7 @@ import java.util.ArrayList;
 public class Dealer {
 
    String suit; //The suit of the card (Ace, Hearts, etc)
-   int value; //The value  or "number" of the card
+   int value; //The value of the card, used for gameplay
    
    //This is the deck where the cards are stored
    Object[] deck = new Object[52];
@@ -66,7 +66,7 @@ public class Dealer {
          cardNum.add(i);
       }
 
-      //Pupulate the deck with randomly positioned cards.
+      //Populate the deck with randomly positioned cards.
       for (int suitNum = 0; suitNum <= 3; suitNum++) {
          //Each iteration of the parent loop represents one full suit
          if (suitNum == 0) {
