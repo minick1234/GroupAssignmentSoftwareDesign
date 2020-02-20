@@ -11,6 +11,11 @@ package ca.sheridancollege.project;
  */
 public class Rules {
    
+   //deal 2 cards to player
+   //deal 2 cards to dealer
+   //check for "blackjack" (ace and 10)
+   //
+   
    /*
 
    THIS CLASS DOES NOTHING, JUST A QUICK REFERENCE FOR THE RULES OF THE GAME. DELETE WHEN DONE.
@@ -24,6 +29,8 @@ public class Rules {
     -If you are dealt 21 from the start (Ace & 10), you got a blackjack.
     -Blackjack usually means you win 1.5 the amount of your bet. Depends on the casino.
     -Dealer will hit until his/her cards total 17 or higher.
+   
+      //Possibly include
     -Doubling is like a hit, only the bet is doubled and you only get one more card.
    
       //We might not include splitting.

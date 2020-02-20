@@ -14,14 +14,42 @@ import java.util.Collections;
  * The group of cards has a maximum size attribute which is flexible for reuse.
  * @author dancye
  */
-public class GroupOfCards 
+public class Deck
 {
+   Card[] deckOfCards = new Card[52];
+   
+   public Deck(){}
+   
+   public void addCard(int position, Card card){
+      deckOfCards[position] = card;
+   }
+   
+   public Card getCard(int position){
+      return deckOfCards[position];
+   }
+   
+   public String toString(){
+      String deckContent = "";
+      
+      for (int a = 0; a < 52; a++) {
+         deckContent += deckOfCards[a] + "\n";
+      }
+      return deckContent;
+   }
+   
+   
+   
+   
+   
+   
+   
+   
    
     //The group of cards, stored in an ArrayList
     private ArrayList <Card> cards;
     private int size;//the size of the grouping
     
-    public GroupOfCards(int givenSize)
+    public Deck(int givenSize)
     {
         size = givenSize;
     }
