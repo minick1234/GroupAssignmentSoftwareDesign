@@ -24,8 +24,8 @@ public class Game
        Player player = new Player();
        
        dealer.shuffleDeck();
-       
-       
+       int ignore =0;
+       //ignore me
       //player draw 2
       //dealer draw 2
       
