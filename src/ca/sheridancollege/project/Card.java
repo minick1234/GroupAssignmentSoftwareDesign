@@ -17,32 +17,69 @@ public class Card
    private int score; //The score of the card (1, 2, 10...)
     
     /**
-     * Students should implement this method for their specific children classes 
-     * @return a String representation of a card. Could be an UNO card, a regular playing card etc.
+     * Default constructor
      */
    public Card(){}
    
+   /**
+    * Multiparameter constructor used to build the card object
+    * @param suit The suit of the card
+    * @param value The "name" of the card ("Two, Three, King, etc")
+    * @param score The actual score value of the card
+    */
    public Card(String suit, String value, int score){
       this.suit = suit;
       this.value = value;
       this.score = score;
    }
    
+   /**
+    * Gets the suit of the card
+    * @return Returns the suit string
+    */
    public String getSuit(){
       return suit;
    }
    
+   /**
+    * Change the score value of the Ace
+    * @param v either 1 or 11
+    */
+   public boolean setAceScore(String v){
+      if(v.trim().equalsIgnoreCase("no")){
+         score = 11;
+      }else if(v.trim().equalsIgnoreCase("yes")){
+         score = 1;
+      }else{
+         System.out.print("Please select only \"yes\" or \"no\"");
+         return false;
+      }
+      return true;
+   }
+   
+   /**
+    * Gets the value (name) of a card
+    * @return Return the value variable
+    */
    public String getValue(){
       return value;
    }
    
+   /**
+    * Gets the score of the card
+    * @return Returns the score variable
+    */
    public int getScore(){
       return score;
    }
    
+   /**
+    * Prints out the name and suit of the card
+    * @return Returns the string for name and suit
+    */
     @Override
     public String toString(){
-       String cardInfo = getSuit() + " of " + getValue();
+       String cardInfo = getValue() + " of " + getSuit();
        return cardInfo;
     }
     
