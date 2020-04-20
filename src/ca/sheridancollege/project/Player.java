@@ -1,17 +1,12 @@
-/**
- * SYST 17796 Project Winter 2019 Base code.
- * Students can modify and extend to implement their game.
- * Add your name as a modifier and the date!
- */
+
 package ca.sheridancollege.project;
 
 import java.util.Scanner;
 
 /**
- * A class that models each Player in the game. Players have an identifier,
- * which should be unique.
- *
- * @author dancye, 2018
+ * The player class, which represents the user and handles: bets and money,
+ * calls, win/lose conditions, play again or exit, and game over events.
+ * @author Cory bridgman
  */
 public class Player extends Hand {
 

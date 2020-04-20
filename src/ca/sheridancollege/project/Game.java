@@ -1,17 +1,12 @@
-/**
- * SYST 17796 Project Winter 2019 Base code.
- * Students can modify and extend to implement their game.
- * Add your name as a modifier and the date!
- */
+
 package ca.sheridancollege.project;
 
 import java.util.Scanner;
 
 /**
- * The class that models your game. You should create a more specific child of
- * this class and instantiate the methods given.
+ * The controller for the game.
  *
- * @author dancye, 2018
+ * @author Cory Bridgman
  */
 public class Game {
 
@@ -113,7 +108,6 @@ public class Game {
                break;
             }
             //dealer HIT until hand over 17 then stand
-//            if ((player.getHandScore() > dealer.getHandScore()) ||
             if (dealer.getHandScore() < 17) {
                dealer.dealSelf();
                dealer.checkAces(); //check again before hand worth print

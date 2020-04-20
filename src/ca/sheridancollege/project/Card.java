@@ -1,11 +1,8 @@
-/**
- * SYST17796 Blackjack Card class
- * Deliverable 1
- */
+
 package ca.sheridancollege.project;
 
 /**
- * The card class is sued to create the card objects
+ * The card class is used to create the card objects
  * They contain the suit, value, and score.
  * 
  * @author Cory Bridgman
@@ -17,7 +14,7 @@ public class Card
    private int score; //The score of the card (1, 2, 10...)
     
     /**
-     * Default constructor
+     * Default constructor. Not in use.
      */
    public Card(){}
    

@@ -83,9 +83,6 @@ public class Dealer extends Hand {
             cardNum.remove(deckLocation); //Remove option for filled position
          }
       }
-      
-      //Print out the contents of the deck for testing purposes
-//      System.out.println(deck);
    }
 
    /**
